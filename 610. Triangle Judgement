@@ -1,0 +1,10 @@
+
+SELECT *, IF(x+y>z and x+z>y and y+z>x, 'Yes','No') AS triangle FROM triangle
+
+#explaination
+SELECT *: This selects all columns from the "triangle" table.
+IF(x+y>z and x+z>y and y+z>x, 'Yes','No') AS triangle: This part creates a new column named "triangle" in the result. 
+It uses the IF function to check if the conditions x+y>z, x+z>y, and y+z>x are all true.
+If all these conditions are true, it assigns the value 'Yes' to the "triangle" column; otherwise, it assigns the value 'No'. 
+The variables x, y, and z represent the values in the respective columns of each row in the "triangle" table.
+FROM triangle: This specifies the table from which the data is being retrieved, in this case, the "triangle" table.
