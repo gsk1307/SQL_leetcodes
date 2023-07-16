@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+SELECT DISTINCT activity_data AS day,user_id AS active_users
+FROM Activity
+GROUP BY activity_date,user_id
+HAVING COUNT(user_id)>=2;
